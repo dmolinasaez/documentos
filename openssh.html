@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <title>HTML basics</title>
+    </head>
+    <body>
+        <div class="sidebar">
+            <h2>Menú</h2>
+            <ul>  
+                <li><a href="#">Inicio</a></li>   
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Servicios</a></li>    
+                <li><a href="#">Contacto</a></li>  
+            </ul>
+        </div>
+    <div class="container">
+        <h1>OpenSSH</h1>
+        <p>Consideraciones</p>  
+        <ul>
+            <li>Es recomendable realizar copias de seguridad y probar en un entorno de desarrollo antes de aplicar cambios en un entorno productivo</li>
+            <li>Válidar siempre los pasos de ejecución revisando la página web oficial</li>
+        </ul>
+        <p>Chequear versión de SSH</p>
+        <pre>ssh -V</pre>
+        <a target="_blank" href="https://www.openssh.com/">www.openssh.com</a>
+        <p>Instalar OpenSSH 9.3p2</p>
+        <ol>
+            <li>Descargar OpenSSH 9.3p2 desde la página oficial</li>
+            <li>Descomprimir el archivo tar.gz <pre>tar -xzvf openssh-9.3.tar.gz</pre></li>
+            <li>Acceder al directorio <pre>cd openssh-9.3</pre></li>
+            <li>Configurar y compilar <pre>./configure make</pre></li>
+            <li>Instalar <pre>make install</pre></li>
+            <li>Reinicia el servicio SSH <pre>restart sshd</pre></li>
+        </ol>
+        </body>
+    </div>
+</html>
